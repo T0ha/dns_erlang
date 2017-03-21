@@ -4,7 +4,7 @@ defmodule DNS.Mixfile do
   def project do
     [app: :dns,
      version: "0.1.0",
-     elixir: "~> 1.4",
+     elixir: ">= 1.3.4",
      compilers: [:asn1, :erlang] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
